@@ -95,10 +95,10 @@ const SearchPage: React.FC = () => {
                     </Box>
                     <Typography variant="subtitle1">{result.title}</Typography>
                     <Typography variant="body2">
-                      Location: {result.location}
+                      Location: {result.location  || "Not Available"}
                     </Typography>
                     <Typography variant="body2">
-                      Photographer: {result.photographer}
+                    Photographer: {result.photographer || "Not Available"}
                     </Typography>
                     <Button
                       variant="outlined"
